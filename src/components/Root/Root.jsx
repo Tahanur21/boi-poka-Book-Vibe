@@ -3,13 +3,15 @@ import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 
 const Root = () => {
-    return (
-        <div className="max-w-7xl mx-auto">
-            <NavBar/>
-            <Outlet/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <NavBar />
+      <div className="max-w-7xl mx-auto">
+      <Outlet />
+      </div>
+      <Footer />
+    </div>
+  );
 };
 
 export default Root;
